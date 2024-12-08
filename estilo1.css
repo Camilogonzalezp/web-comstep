@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo-image {
+    width: 150px;
+    height: auto;
+}
+
+.navigation {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #f4a261;
+}
+
+/* Main Section */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category-section h2 {
+    margin-bottom: 10px;
+}
+
+.category-section a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-section a:hover {
+    text-decoration: underline;
+}
+
+.product-image {
+    margin: 10px auto;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-navigation a:hover {
+    color: #f4a261;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .logo-image {
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-section {
+        padding: 15px;
+    }
+
+    .category-section h2 {
+        font-size: 18px;
+    }
+
+    .category-section a {
+        font-size: 14px;
+    }
+
+    .logo-image {
+        width: 100px;
+    }
+
+    .footer-navigation {
+        font-size: 14px;
+    }
+}

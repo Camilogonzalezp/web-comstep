@@ -1,0 +1,151 @@
+    
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+.header h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+}
+
+.producto-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.producto-info {
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.volver {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+/* Para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .hero-content {
+        gap: 5px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+}
+
+
+/* Para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+}
+
+/* Para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .hero-content {
+        gap: 5px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+}
+
+/* Para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero img {
+        width: 100px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

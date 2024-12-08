@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hero */
+.hero {
+    background-color: #333; /* Azul claro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero img {
+    border-radius: 50%;
+}
+
+/* Navegación */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    border-color: #007BFF;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+}
+
+/* Para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .hero-content {
+        gap: 5px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+}
+
+/* Para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero img {
+        width: 100px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}

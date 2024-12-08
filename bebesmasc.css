@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.catalog-title {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.product {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .product {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .product h3 {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    .product {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product h3, .price {
+        font-size: 18px;
+    }
+
+    .product-image {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .product-image {
+        max-width: 250px;
+    }
+
+    .product h3, .price {
+        font-size: 20px;
+    }
+}
